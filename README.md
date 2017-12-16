@@ -7,7 +7,7 @@ macØS H!gh Sierra on Asus U3000
   Model     |   Asus U3000
 ------------|----------------------
   CPU       |   i7-6500U
-  Memory    |   2*4G DDR3
+  Memory    |   2 \* 4G DDR3
   Storage   |   Micron M600 512G SSD
   Graphics  |   Intel HD520 (integrated)
   Display   |   13.3" 1080p IPS

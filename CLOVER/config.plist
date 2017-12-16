@@ -4,8 +4,6 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>AutoMerge</key>
-		<true/>
 		<key>#Comment-SortedOrder</key>
 		<string>SortedOrder may be required if you have patched SSDTs in ACPI/patched</string>
 		<key>#SortedOrder</key>
@@ -36,25 +34,27 @@
 			<string>SSDT-UIAC.aml</string>
 			<string>SSDT-PNLF.aml</string>
 		</array>
+		<key>AutoMerge</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
 			<dict>
-				<key>FixRegions_10000000</key>
-				<false/>
-				<key>NewWay_80000000</key>
-				<true/>
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
-				<key>FIX_TMR_40000</key>
-				<false/>
 				<key>FIX_RTC_20000</key>
 				<false/>
-				<key>FixIPIC_0040</key>
+				<key>FIX_TMR_40000</key>
 				<false/>
 				<key>FixHPET_0010</key>
 				<false/>
 				<key>FixHeaders_20000000</key>
+				<true/>
+				<key>FixIPIC_0040</key>
+				<false/>
+				<key>FixRegions_10000000</key>
+				<false/>
+				<key>NewWay_80000000</key>
 				<true/>
 			</dict>
 			<key>Patches</key>
@@ -65,9 +65,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>T1NJRA==</data>
+					<data>
+					T1NJRA==
+					</data>
 					<key>Replace</key>
-					<data>WFNJRA==</data>
+					<data>
+					WFNJRA==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -75,17 +79,25 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X09TSQ==</data>
+					<data>
+					X09TSQ==
+					</data>
 					<key>Replace</key>
-					<data>WE9TSQ==</data>
+					<data>
+					WE9TSQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change _DSM to XDSM</string>
 					<key>Find</key>
-					<data>X0RTTQ==</data>
+					<data>
+					X0RTTQ==
+					</data>
 					<key>Replace</key>
-					<data>WERTTQ==</data>
+					<data>
+					WERTTQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -93,9 +105,13 @@
 					<key>Disabled</key>
 					<true/>
 					<key>Find</key>
-					<data>RUMwXw==</data>
+					<data>
+					RUMwXw==
+					</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>
+					RUNfXw==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -103,9 +119,13 @@
 					<key>Disabled</key>
 					<true/>
 					<key>Find</key>
-					<data>SF9FQw==</data>
+					<data>
+					SF9FQw==
+					</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>
+					RUNfXw==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -113,57 +133,85 @@
 					<key>Disabled</key>
 					<true/>
 					<key>Find</key>
-					<data>RUNEVg==</data>
+					<data>
+					RUNEVg==
+					</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>
+					RUNfXw==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
 					<key>Find</key>
-					<data>SERBUw==</data>
+					<data>
+					SERBUw==
+					</data>
 					<key>Replace</key>
-					<data>SERFRg==</data>
+					<data>
+					SERFRg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Find</key>
-					<data>SEVDSQ==</data>
+					<data>
+					SEVDSQ==
+					</data>
 					<key>Replace</key>
-					<data>SU1FSQ==</data>
+					<data>
+					SU1FSQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change MEI to IMEI</string>
 					<key>Find</key>
-					<data>TUVJXw==</data>
+					<data>
+					TUVJXw==
+					</data>
 					<key>Replace</key>
-					<data>SU1FSQ==</data>
+					<data>
+					SU1FSQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Find</key>
-					<data>R0ZYMA==</data>
+					<data>
+					R0ZYMA==
+					</data>
 					<key>Replace</key>
-					<data>SUdQVQ==</data>
+					<data>
+					SUdQVQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
 					<key>Find</key>
-					<data>UENJMFZJRF8=</data>
+					<data>
+					UENJMFZJRF8=
+					</data>
 					<key>Replace</key>
-					<data>UENJMElHUFU=</data>
+					<data>
+					UENJMElHUFU=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
 					<key>Find</key>
-					<data>VklEXwhfQURSDAAAAgA=</data>
+					<data>
+					VklEXwhfQURSDAAAAgA=
+					</data>
 					<key>Replace</key>
-					<data>SUdQVQhfQURSDAAAAgA=</data>
+					<data>
+					SUdQVQhfQURSDAAAAgA=
+					</data>
 				</dict>
 			</array>
 		</dict>
@@ -201,16 +249,16 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
-			<key>NoOemTableId</key>
-			<true/>
 			<key>NoDynamicExtract</key>
+			<true/>
+			<key>NoOemTableId</key>
 			<true/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 -v debug=0x100 keepsyms=1 dart=0 nv_disable=1</string>
+		<string>kext-dev-mode=1 -v debug=0x100 keepsyms=1 dart=0 darkwake=0 nv_disable=1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -229,70 +277,43 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>AddProperties</key>
-		<array>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Key</key>
-				<string>name</string>
-				<key>Value</key>
-				<data>I2Rpc3BsYXkA</data>
-				<key>Comment</key>
-				<string>Inject &quot;name&quot; as (data)&quot;#display&quot; to disable graphics drivers on NVidia</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Key</key>
-				<string>IOName</string>
-				<key>Value</key>
-				<string>#display</string>
-				<key>Comment</key>
-				<string>Inject &quot;IOName&quot; as &quot;#display&quot; to disable graphics drivers on NVidia</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Key</key>
-				<string>class-code</string>
-				<key>Value</key>
-				<data>/////w==</data>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
-			</dict>
-		</array>
 		<key>#AddProperties</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>hda-gfx=onboard-1 for HDMI audio</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 				<key>Key</key>
 				<string>hda-gfx</string>
 				<key>Value</key>
-				<data>b25ib2FyZC0xAA==</data>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
+				<data>
+				b25ib2FyZC0xAA==
+				</data>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>hda-gfx=onboard-1 for HDMI audio</string>
 				<key>Device</key>
 				<string>HDA</string>
 				<key>Key</key>
 				<string>hda-gfx</string>
 				<key>Value</key>
-				<data>b25ib2FyZC0xAA==</data>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
+				<data>
+				b25ib2FyZC0xAA==
+				</data>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>layout-id=3</string>
 				<key>Device</key>
 				<string>HDA</string>
 				<key>Key</key>
 				<string>layout-id</string>
 				<key>Value</key>
-				<data>AwAAAA==</data>
-				<key>Comment</key>
-				<string>layout-id=3</string>
+				<data>
+				AwAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Device</key>
@@ -300,7 +321,45 @@
 				<key>Key</key>
 				<string>PinConfigurations</string>
 				<key>Value</key>
-				<data></data>
+				<data>
+				</data>
+			</dict>
+		</array>
+		<key>AddProperties</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Inject "name" as (data)"#display" to disable graphics drivers on NVidia</string>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Key</key>
+				<string>name</string>
+				<key>Value</key>
+				<data>
+				I2Rpc3BsYXkA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Inject "IOName" as "#display" to disable graphics drivers on NVidia</string>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Key</key>
+				<string>IOName</string>
+				<key>Value</key>
+				<string>#display</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Key</key>
+				<string>class-code</string>
+				<key>Value</key>
+				<data>
+				/////w==
+				</data>
 			</dict>
 		</array>
 		<key>Audio</key>
@@ -310,9 +369,9 @@
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>FixOwnership</key>
-			<true/>
 			<key>AddClockID</key>
+			<true/>
+			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
 			<true/>
@@ -337,9 +396,9 @@
 					<string>OSXRecovery</string>
 				</dict>
 				<dict>
-					<key>Type</key>
-					<string>Windows</string>
 					<key>Title</key>
+					<string>Windows</string>
+					<key>Type</key>
 					<string>Windows</string>
 				</dict>
 			</array>
@@ -371,8 +430,6 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>ig-platform-id</key>
-		<string>0x191b0000</string>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -384,74 +441,25 @@
 		</dict>
 		<key>InjectEDID</key>
 		<false/>
+		<key>ig-platform-id</key>
+		<string>0x191b0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AsusAICPUPM</key>
-		<true/>
 		<key>AppleRTC</key>
+		<true/>
+		<key>AsusAICPUPM</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
-		<key>KernelLapic</key>
-		<true/>
-		<key>KernelPm</key>
-		<true/>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>0x19160000/etc, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>AAAgAgAAUAE=</data>
-				<key>Replace</key>
-				<data>AAAwAQAAkAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>eDP, port 0000, 0x191e0000, 0x19160000, 0x19260000, 0x19270000, 0x191b0000, 0x19160002, 0x19260002, 0x191e0003, 0x19260004, 0x19270004, 0x193b0005 credit syscl</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>AAAIAAIAAACYAAAAAQUJAAAEAAA=</data>
-				<key>Replace</key>
-				<data>AAAIAAAEAACYAAAAAQUJAAAEAAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable lid wake for 0x19260002 credit syscl/lighting/Yating Zhou</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>ChMDAAAABgAAAAAAAAAAAA==</data>
-				<key>Replace</key>
-				<data>DxMDAAAABgAAAAAAAAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable lid wake for 0x19260004 credit syscl/lighting/Yating Zhou</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>CgsDAAAHBgADAAAABAAAAA==</data>
-				<key>Replace</key>
-				<data>DwsDAAAHBgADAAAABAAAAA==</data>
-			</dict>
-		</array>
+		<key>KernelLapic</key>
+		<true/>
+		<key>KernelPm</key>
+		<true/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
@@ -460,25 +468,110 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>ILniAAAADzA=</data>
+				<data>
+				ILniAAAADzA=
+				</data>
 				<key>Replace</key>
-				<data>ILniAAAAkJA=</data>
+				<data>
+				ILniAAAAkJA=
+				</data>
+			</dict>
+		</array>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
+				<key>Find</key>
+				<data>
+				RiV1VCUwNHgA
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleBacklight</string>
+				<key>Replace</key>
+				<data>
+				RiV1VHh4eHgA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x19160000/etc, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AAAgAgAAUAE=
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AAAwAQAAkAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>eDP, port 0000, 0x191e0000, 0x19160000, 0x19260000, 0x19270000, 0x191b0000, 0x19160002, 0x19260002, 0x191e0003, 0x19260004, 0x19270004, 0x193b0005 credit syscl</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AAAIAAIAAACYAAAAAQUJAAAEAAA=
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AAAIAAAEAACYAAAAAQUJAAAEAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable lid wake for 0x19260002 credit syscl/lighting/Yating Zhou</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				ChMDAAAABgAAAAAAAAAAAA==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				DxMDAAAABgAAAAAAAAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable lid wake for 0x19260004 credit syscl/lighting/Yating Zhou</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				CgsDAAAHBgADAAAABAAAAA==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				DwsDAAAHBgADAAAABAAAAA==
+				</data>
 			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>CsrActiveConfig</key>
-		<string>0x67</string>
 		<key>BooterConfig</key>
 		<string>0x28</string>
+		<key>CsrActiveConfig</key>
+		<string>0x67</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>ProductName-Comment</key>
-		<string>Using Haswell MacBookAir6,2 until Clover has support for Skylake identifiers</string>
 		<key>ProductName</key>
 		<string>MacBookAir6,2</string>
+		<key>ProductName-Comment</key>
+		<string>Using Haswell MacBookAir6,2 until Clover has support for Skylake identifiers</string>
 		<key>Trust</key>
 		<true/>
 	</dict>
